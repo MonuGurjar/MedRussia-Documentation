@@ -89,6 +89,17 @@ The web client prototype is live and accessible at:
 
 ---
 
+## 📥 Download Android Application (v1.1.5)
+
+Pre-built installable APK binaries for Android are hosted directly within this repository:
+
+| Build Variant | Direct Download Link | Size | Details |
+| :--- | :--- | :--- | :--- |
+| **Release Build** | [⬇️ **Download `app-release-v1.1.5.apk`**](apks/app-release-v1.1.5.apk) | `14 MB` | Production-optimized, R8 minified & release signed. |
+| **Debug Build** | [⬇️ **Download `app-debug-v1.1.5.apk`**](apks/app-debug-v1.1.5.apk) | `37 MB` | Development build with diagnostic logging enabled. |
+
+---
+
 ## 🌟 Key Platform Features
 
 | Feature | Category | Description |

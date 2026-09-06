@@ -38,7 +38,14 @@
 * **NMC FMGL 2021 Eligibility Evaluator**: Instant algorithmic compliance verification against statutory Indian medical regulations.
 * **5-Stage Live Admission Dossier Tracker**: Visual milestone tracker reporting real-time progress from application review to MVD Ministry visa issuance and campus reception.
 * **Private Student Document Vault**: Upload and preview sensitive marksheets and passport copies through secure, short-lived presigned URLs.
-* **AI MD Counselor (Google Gemini)**: 24/7 AI-powered conversational medical advisor.
+---
+
+## 📥 Pre-Built APK Downloads (v1.1.5)
+
+| Build Variant | Direct Download Link | Size | Details |
+| :--- | :--- | :--- | :--- |
+| **Release Build** | [⬇️ **Download `app-release-v1.1.5.apk`**](../../apks/app-release-v1.1.5.apk) | `14 MB` | Production-optimized, R8 minified & release signed. |
+| **Debug Build** | [⬇️ **Download `app-debug-v1.1.5.apk`**](../../apks/app-debug-v1.1.5.apk) | `37 MB` | Development build with diagnostic logging enabled. |
 
 ---
 
