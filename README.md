@@ -10,6 +10,7 @@
   [![React](https://img.shields.io/badge/Frontend-React%2019%20%2F%20Vite-61DAFB.svg?style=flat-square&logo=react&logoColor=black)](https://react.dev)
   [![Kotlin](https://img.shields.io/badge/Mobile-Kotlin%20%2F%20Jetpack%20Compose-7F52FF.svg?style=flat-square&logo=kotlin&logoColor=white)](https://developer.android.com/jetpack/compose)
   [![PostgreSQL](https://img.shields.io/badge/Database-PostgreSQL%2015+-336791.svg?style=flat-square&logo=postgresql&logoColor=white)](https://www.postgresql.org)
+  [![Release](https://img.shields.io/badge/Release-v1.1.5-blue.svg?style=flat-square&logo=android&logoColor=white)](https://github.com/MonuGurjar/MedRussia-Documentation/releases/tag/v1.1.5)
   [![License](https://img.shields.io/badge/License-MIT-amber.svg?style=flat-square)](LICENSE)
   [![Status](https://img.shields.io/badge/Status-Active%20Development-success.svg?style=flat-square)](#development-status)
 
@@ -91,12 +92,12 @@ The web client prototype is live and accessible at:
 
 ## 📥 Download Android Application (v1.1.5)
 
-Pre-built installable APK binaries for Android are hosted directly within this repository:
+Pre-built installable APK binaries are available via direct repository download and [Official GitHub Release v1.1.5](https://github.com/MonuGurjar/MedRussia-Documentation/releases/tag/v1.1.5):
 
-| Build Variant | Direct Download Link | Size | Details |
-| :--- | :--- | :--- | :--- |
-| **Release Build** | [⬇️ **Download `app-release-v1.1.5.apk`**](apks/app-release-v1.1.5.apk) | `14 MB` | Production-optimized, R8 minified & release signed. |
-| **Debug Build** | [⬇️ **Download `app-debug-v1.1.5.apk`**](apks/app-debug-v1.1.5.apk) | `37 MB` | Development build with diagnostic logging enabled. |
+| Build Variant | Direct Repo Download | GitHub Release Download | Size | Details |
+| :--- | :--- | :--- | :--- | :--- |
+| **Release Build** | [⬇️ `app-release-v1.1.5.apk`](apks/app-release-v1.1.5.apk) | [📦 **Download from Releases**](https://github.com/MonuGurjar/MedRussia-Documentation/releases/download/v1.1.5/app-release-v1.1.5.apk) | `14 MB` | Production-optimized, R8 minified & signed. |
+| **Debug Build** | [⬇️ `app-debug-v1.1.5.apk`](apks/app-debug-v1.1.5.apk) | [📦 **Download from Releases**](https://github.com/MonuGurjar/MedRussia-Documentation/releases/download/v1.1.5/app-debug-v1.1.5.apk) | `37 MB` | Development build with diagnostic logging. |
 
 ---
 
