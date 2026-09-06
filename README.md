@@ -1,6 +1,6 @@
 <div align="center">
 
-  <img src="assets/images/logo.png" alt="MedRussia Logo" width="180" />
+  <img src="assets/images/logo.png" alt="MedRussia Logo" width="200" />
 
   # MedRussia
 
@@ -32,6 +32,33 @@
 **MedRussia** is an end-to-end, multi-client medical admissions and university governance platform engineered to digitize, verify, and streamline international MBBS education in the Russian Federation for Indian students.
 
 Navigating foreign medical education historically suffers from opaque agent markups, fragmented documentation, and high compliance risks relative to statutory mandates (such as India's **National Medical Commission (NMC) FMGL Regulations 2021**). MedRussia bridges this gap with a single source of truth: unified backend business logic, automated 5-stage admission tracking, tamper-evident private document vaults, and multi-currency financial planners.
+
+> **Notice**: This public repository serves as the official architectural showcase, system documentation, and engineering portfolio. Production source code, environment secrets, and deployment keys are maintained within private enterprise repositories (`medrussia-platform 🔒`, `medrussia-android 🔒`, `MedRussia-web 🔒`).
+
+---
+
+## 📚 Documentation Index
+
+Explore the comprehensive technical documentation organized by subsystem:
+
+### 1. Global Platform Specifications
+* [System Architecture Overview](docs/architecture.md) — Multi-tier design, API gateway pattern, response envelopes, and RFC 7807 error model.
+* [Product Features & Compliance](docs/features.md) — University explorer, 6-year calculator, NMC eligibility engine, and KYC vault.
+* [Technology Stack Matrix](docs/tech-stack.md) — Full breakdown of languages, frameworks, ORMs, and hosting tiers.
+* [Project Roadmap & Milestones](docs/roadmap.md) — Past accomplishments, active tasks, and future horizons.
+* [Security Philosophy & Data Protection](docs/security.md) — Defense-in-depth, token rotation, and private storage architecture.
+
+### 2. Native Android Application Client
+* [Android Client Overview](docs/android/README.md) — Jetpack Compose architecture, UI/UX philosophy, and setup guide.
+* [Android Architecture Deep Dive](docs/android/architecture.md) — Unidirectional data flow (UDF), ViewModel state hoisting, and Ktor client.
+* [Android Screen & Feature Breakdown](docs/android/features.md) — Cinematic onboarding, dashboard, 5-stage tracker, and document vault.
+* [Android Dependencies & Tech Stack](docs/android/tech-stack.md) — Kotlin 1.9+, Java 21 toolchain, Compose BOM, and R8 shrinking.
+
+### 3. Central Platform API (Backend)
+* [Central Platform Overview](docs/platform/README.md) — FastAPI ASGI backend, domain services, and database persistence.
+* [Backend Architecture & Service Design](docs/platform/architecture.md) — Non-blocking async pipeline, dependency injection, and state machines.
+* [OpenAPI Specifications & Contracts](docs/platform/api-specifications.md) — Endpoint index, request/response envelopes, and problem details.
+* [Platform Security & Storage Model](docs/platform/security-model.md) — Argon2-cffi, stateless JWT lifecycle, and ephemeral S3 presigning.
 
 ---
 
@@ -101,13 +128,9 @@ MedRussia implements a decoupled, multi-tier architecture governed by a central,
                                        +----------------------+
 ```
 
-*For detailed architectural specifications, see [docs/architecture.md](docs/architecture.md).*
-
 ---
 
-## 💻 Technology Stack
-
-MedRussia is engineered with a battle-tested, modern technology stack:
+## 💻 Technology Stack Summary
 
 ### Backend
 * **FastAPI (Python 3.11+)**: High-performance, asynchronous REST framework with native OpenAPI 3.1 generation.
@@ -116,7 +139,6 @@ MedRussia is engineered with a battle-tested, modern technology stack:
 * **Alembic**: Deterministic database schema versioning and automated migration scripts.
 * **Pydantic v2**: High-throughput data validation and settings management.
 * **PyJWT & Argon2-cffi**: Cryptographically hardened authentication with short-lived JWTs and salted password hashing.
-* **structlog**: Machine-readable structured JSON logging with request correlation IDs.
 
 ### Web Client
 * **React 19 / 18 & TypeScript 5.8+**: Modern, strictly typed component-driven client architecture.
@@ -131,7 +153,6 @@ MedRussia is engineered with a battle-tested, modern technology stack:
 * **Coroutines & Reactive StateFlow**: Non-blocking asynchronous threading with single-source-of-truth state holders.
 * **Ktor HTTP Client**: Lightweight, multiplatform-ready networking engine.
 * **Kotlinx Serialization**: Reflection-free, high-speed JSON serialization.
-* **MVVM & Repository Pattern**: Clean separation between data repositories, UI state, and views.
 
 ### Database & Storage
 * **PostgreSQL 15+**: Relational integrity, foreign key cascades, and transactional consistency.
@@ -141,7 +162,7 @@ MedRussia is engineered with a battle-tested, modern technology stack:
 
 ## 🌐 Project Ecosystem
 
-MedRussia is partitioned into focused repositories to maintain strict security boundaries and development velocity:
+MedRussia is partitioned into focused modules to maintain strict security boundaries and development velocity:
 
 ```
 MedRussia Ecosystem
@@ -159,23 +180,20 @@ MedRussia Ecosystem
     └── Public portal, architectural documentation, product roadmaps, and developer showcases
 ```
 
-> **Note**: `medrussia-platform` serves as the private single source of truth. Production source code, environment secrets, and deployment keys are strictly held in private repositories.
-
 ---
 
-## 📱 Interface & Screenshots
+## 📱 Interface Previews & Screenshots
 
 <div align="center">
 
 | Web Landing & Hero | Android Admission Tracker |
 | :---: | :---: |
-| *(See screenshots directory)* | *(See screenshots directory)* |
-| **Interactive 6-Year Calculator** | **NMC Eligibility Evaluator** |
-| *(See screenshots directory)* | *(See screenshots directory)* |
+| <img src="assets/images/logo.png" width="220" /> | <img src="assets/images/icon.png" width="140" /> |
+| *Desktop Explorer & Filter Matrix* | *5-Stage Real-Time Milestone Tracker* |
 
 </div>
 
-*High-resolution previews and UI flows can be inspected in the [screenshots/](screenshots/README.md) directory.*
+*Inspect the complete UI capture gallery in [screenshots/README.md](screenshots/README.md).*
 
 ---
 
@@ -189,8 +207,6 @@ MedRussia Ecosystem
 | **Phase 4** | Web & Android Unified Client Cutover to Central API | Completed ✅ | Q3 2026 |
 | **Phase 5** | Production Readiness & External Verification | In Progress 🔄 | Q3 2026 |
 | **Phase 6** | Real-time WebSockets & Multi-language Localization | Planned 📅 | Q4 2026 |
-
-*Detailed progress items and feature tracking are documented in [docs/roadmap.md](docs/roadmap.md).*
 
 ---
 
